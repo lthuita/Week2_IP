@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Game of Names</title>
 
   </head>
@@ -29,28 +29,27 @@ Goldenberg and his research colleagues are now collecting the data to prove it, 
   <p>Let's play the game of names now;<br>
     <h2>Enter your Personal details</h2>
 
-<form name="testForm" action="js/scripts.js" method="post">
+<form>
 <label for="name">First name:</label><br>
 <input type="text" id="name" name="name"><br><br>
 <label for="gender">Choose your gender:</label><br>
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label><br><br>
+
+<select name="gender" id = "gender">
+  <option value="male"> Male</option>
+  <option value="female"> Female</option>
+</select><br><br>
 <label for="birthDay">Enter your Birthday (YYYY-MM-DD):</label><br>
-<input type=integer id="birthDay" name="birthDay"><br><br>
-<input type="submit" value="Submit">
+<input type= "text" id="birthDay" name="birthDay"><br><br>
+<button onclick="naming()">Check Name</button>
+<input type="reset">
 </form>
 <br>
-</form>
 
-</form>
   </p>
 
+      <script type="text/javascript" src="js/scripts.js">
 
-    <script type="text/javascript" src="js/scripts.js">
-
-    </script>
+      </script>
 
   </body>
 </html>

@@ -7,69 +7,78 @@ function weekDay(dayNum) {
 }
 
 function naming(){
-var yourName = document.forms["testForm"]["name"].value;
-while (yourName == "") {
+  //alert ("Hello World")
+var name = document.getElementById("name").value.toString();
+if (name == "") {
     alert("Name can't be left blank")
   }
 
-var yourGender = document.forms["testForm"]["gender"].value;
-while (youGender == "")  {
-    alert("Please select your gender")
+var gender = document.getElementById("gender").value.toString();
+if (gender == " ")  {
+   alert("Please select your gender")
 
   }
 
-var yourBirthDay = document.forms["testForm"]["birthDay"].value;
-while (yourBirthDay.split('-').length !== 3 ||
-yourBirthDay.split('-')[1].length !== 2 ||
-yourBirthDay.split('-')[1] > 12 ||
-yourBirthDay.split('-')[1] <= 0 ||
-yourBirthDay.split('-')[2].length !== 2 ||
-yourBirthDay.split('-')[2] > 31 ||
-yourBirthDay.split('-')[2] <= 0) {
+var birthDay = document.getElementById("birthDay").value.toString();
+if (birthDay.split('-').length !== 3 ||
+birthDay.split('-')[1].length !== 2 ||
+birthDay.split('-')[1] > 12 ||
+birthDay.split('-')[1] <= 0 ||
+birthDay.split('-')[2].length !== 2 ||
+birthDay.split('-')[2] > 31 ||
+birthDay.split('-')[2] <= 0) {
 alert("Invalid Date, Please enter your birthday in the format YYYY-MM-DD")
 }
-}
 
-bday = yourBirthDay.split('-');
+
+bday = birthDay.split('-');
 dayNum = new Date(bday)
 
-if (weekDay(dayNum) == "Sunday" && yourGender == "male")
-  alert("Dear " + yourName + " your new name will be " + akanNames[0] + ".")
-else if (weekDay(dayNum) == "Monday" && yourGender == "male") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[1] + ".")
-} else if (weekDay(dayNum) == "Tuesday" && yourGender == "male") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[2] + ".")
-} else if (weekDay(dayNum) == "Wednesday" && yourGender == "male") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[3] + ".")
-} else if (weekDay(dayNum) == "Thursday" && yourGender == "male") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[4] + ".")
-} else if (weekDay(dayNum) == "Friday" && yourGender == "male") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[5] + ".")
-} else if (weekDay(dayNum) == "Saturday" && yourGender == "male") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[6] + ".")
-} else if (weekDay(dayNum) == "Sunday" && yourGender == "female") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[7] + ".")
-} else if (weekDay(dayNum) == "Monday" && yourGender == "female") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[8] + ".")
-} else if (weekDay(dayNum) == "Tuesday" && yourGender == "female") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[9] + ".")
-} else if (weekDay(dayNum) == "Wednesday" && yourGender == "female") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[10] + ".")
-} else if (weekDay(dayNum) == "Thursday" && yourGender == "female") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[11] + ".")
-} else if (weekDay(dayNum) == "Friday" && yourGender == "female") {
-  alert("Dear " + yourName + " your new name will be " + akanNames[12] + ".")
-} else {
-  alert("Dear " + yourName + " your new name will be " + akanNames[13] + ".")
+if (weekDay(dayNum) == "Sunday" && gender == "male")
+  alert("Dear " + name + " your new name will be " + akanNames[0] + ".")
+else if (weekDay(dayNum) == "Monday" && gender == "male") {
+  alert("Dear " + name + " your new name will be " + akanNames[1] + ".")
+} else if (weekDay(dayNum) == "Tuesday" && gender == "male") {
+  alert("Dear " + name + " your new name will be " + akanNames[2] + ".")
+} else if (weekDay(dayNum) == "Wednesday" && gender == "male") {
+  alert("Dear " + name + " your new name will be " + akanNames[3] + ".")
+} else if (weekDay(dayNum) == "Thursday" && gender == "male") {
+  alert("Dear " + name + " your new name will be " + akanNames[4] + ".")
+} else if (weekDay(dayNum) == "Friday" && gender == "male") {
+  alert("Dear " + name + " your new name will be " + akanNames[5] + ".")
+} else if (weekDay(dayNum) == "Saturday" && gender == "male") {
+  alert("Dear " + name + " your new name will be " + akanNames[6] + ".")
+} else if (weekDay(dayNum) == "Sunday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[7] + ".")
+} else if (weekDay(dayNum) == "Monday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[8] + ".")
+} else if (weekDay(dayNum) == "Tuesday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[9] + ".")
+} else if (weekDay(dayNum) == "Wednesday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[10] + ".")
+} else if (weekDay(dayNum) == "Thursday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[11] + ".")
+} else if (weekDay(dayNum) == "Friday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[12] + ".")
+} else if (weekDay(dayNum) == "Saturday" && gender == "female") {
+  alert("Dear " + name + " your new name will be " + akanNames[13] + ".")
 }
-playAgain();
+else {
+  alert ("You entered wrong information")
+};
+alert ("Thank you " + name + ".")
+//}
+//playAgain();
 }
-naming();
+//naming();
 
-function playAgain() {
-if ((confirm("Do you want to play the game again?").toString()) == 'true') {
-  naming();
-} else {
-  alert("Thank you.")
-}
-}
+//function playAgain() {
+//if ((confirm("Do you want to play the game again?").toString()) == 'true') {
+//  naming();
+//} else {
+//  alert("Thank you.")
+//}
+//}
+
+
+//function SayHello(){ alert(“Hello”);}
