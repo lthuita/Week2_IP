@@ -12,3 +12,8 @@ width: 100%;
   width: 60%;
   font-style: italic;
 }
+
+.akan2 {
+  font: italic small-caps bold 48px Georgia, Sans;
+  text-shadow: 2px 2px green;
+}
