@@ -11,7 +11,6 @@
   <body>
     <h1>Introducing to you a new game of names</h1>
     <h3>What's in a name?</h3>
-
     <p>
 
       Say you have twins, identical in every way. Will their difference in names cause them to look different over time?
@@ -28,25 +27,37 @@
 
       Most people do know when their birthdays are, but some might not know what day of the week they were born. Luckily for us, there are ways to calculate the day of the week from a specific date and through our calculator, we have been able to come up wit a formula to derive a new Akan name based on the gender and date of birth</p>
 
-    <p>Let's play the game of names now;<br>
-      <h2>Enter your Personal details</h2>
-
-      <form>
-        <label for="name">First name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="gender">Choose your gender:</label><br>
-
-        <select name="gender" id="gender">
-          <option value=""> </option>
-          <option value="male"> Male</option>
-          <option value="female"> Female</option>
-        </select><br><br>
-        <label for="birthDay">Enter your Birthday (YYYY-MM-DD):</label><br>
-        <input type="text" id="birthDay" name="birthDay"><br><br>
-        <button onclick="naming()">Check Name</button>
-        <input type="reset">
-      </form>
-      <br>
+    <p>Let's play the game of names now. Once you enter your gender and your birthday in the format indicated, you will be able to see a pop-up showing you your new "Ghanian name"<br>
+      <div class ="container">
+        <div class ="row">
+          <div class="card card-info">
+            <div class="card-heading">
+              <h2 class="class-title">Enter your Personal details</h2>
+            </div>
+            <div class="card-body">
+              <form>
+                <label for="name">First name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="gender">Choose your gender:</label><br>
+                <select name="gender" id="gender">
+                  <option value=""> </option>
+                  <option value="male"> Male</option>
+                  <option value="female"> Female</option>
+                </select><br><br>
+                <label for="birthDay">Enter your Birthday (YYYY-MM-DD):</label><br>
+                <input type="text" id="birthDay" name="birthDay"><br><br>
+                <input class="bg-success" type="submit" onclick="naming()" value="Submit">
+                <input class="bg-danger" type="reset"><br><br>
+                <br>
+                <div class="card-footer">
+                  <p class="bg-success">Game of Akan names</p>
+                </div>
+              </form>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </p>
 
