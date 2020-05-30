@@ -9,26 +9,10 @@ function weekDay(dayNum) {
 function naming(){
   //alert ("Hello World")
 var name = document.getElementById("name").value.toString();
-if (name == "") {
-    alert("Name can't be left blank")
-  }
 
 var gender = document.getElementById("gender").value.toString();
-if (gender == " ")  {
-   alert("Please select your gender")
-
-  }
 
 var birthDay = document.getElementById("birthDay").value.toString();
-if (birthDay.split('-').length !== 3 ||
-birthDay.split('-')[1].length !== 2 ||
-birthDay.split('-')[1] > 12 ||
-birthDay.split('-')[1] <= 0 ||
-birthDay.split('-')[2].length !== 2 ||
-birthDay.split('-')[2] > 31 ||
-birthDay.split('-')[2] <= 0) {
-alert("Invalid Date, Please enter your birthday in the format YYYY-MM-DD")
-}
 
 
 bday = birthDay.split('-');
@@ -63,13 +47,27 @@ else if (weekDay(dayNum) == "Monday" && gender == "male") {
 } else if (weekDay(dayNum) == "Saturday" && gender == "female") {
   alert("Dear " + name + " your new name will be " + akanNames[13] + ".")
 }
+else if (gender == "")  {
+   alert("You didnt select your gender")
+   }
+else if (birthDay.split('-').length !== 3 ||
+birthDay.split('-')[1].length !== 2 ||
+birthDay.split('-')[1] > 12 ||
+birthDay.split('-')[1] <= 0 ||
+birthDay.split('-')[2].length !== 2 ||
+birthDay.split('-')[2] > 31 ||
+birthDay.split('-')[2] <= 0) {
+alert("Invalid Date, Please enter your birthday in the format YYYY-MM-DD")
+}
 else {
   alert ("You entered wrong information")
-};
+}
 alert ("Thank you " + name + ".")
+};
+
 //}
 //playAgain();
-}
+
 //naming();
 
 //function playAgain() {
