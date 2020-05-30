@@ -4,12 +4,15 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Game of Names</title>
 
   </head>
 
   <body>
-    <h1>Introducing to you a new game of names</h1>
+    <div class = "jumbotron">
+    <h1>INTRODUCING A NEW GAME OF NAMES</h1>
+    </div>
     <h3>What's in a name?</h3>
     <p>
 
@@ -22,6 +25,7 @@
       <br>
       <br>Click <a href="https://www8.gsb.columbia.edu/articles/ideas-work/what-s-name">here</a> for more details.
     </p>
+
     <h3>My new naming system</h3>
     <p>My new naming system is called Akan naming system. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
 
@@ -32,20 +36,20 @@
         <div class ="row">
           <div class="card card-info">
             <div class="card-heading">
-              <h2 class="class-title">Enter your Personal details</h2>
-            </div>
-            <div class="card-body">
+              <div class="class-title">
+                <h2  class="bg-success">Enter your Personal details</h2>
+              <div class="card-body">
               <form>
                 <label for="name">First name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input class="col-md-4" type="text" id="name" name="name"><br><br>
                 <label for="gender">Choose your gender:</label><br>
-                <select name="gender" id="gender">
+                <select class="col-md-4" name="gender" id="gender">
                   <option value=""> </option>
                   <option value="male"> Male</option>
                   <option value="female"> Female</option>
                 </select><br><br>
                 <label for="birthDay">Enter your Birthday (YYYY-MM-DD):</label><br>
-                <input type="text" id="birthDay" name="birthDay"><br><br>
+                <input class="col-md-4" type="text" id="birthDay" name="birthDay"><br><br>
                 <input class="bg-success" type="submit" onclick="naming()" value="Submit">
                 <input class="bg-danger" type="reset"><br><br>
                 <br>
@@ -58,6 +62,8 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
     </p>
 
