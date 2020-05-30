@@ -1,0 +1,14 @@
+form {
+float: left;
+width: 100%;
+}
+
+.entry{
+  float: right;
+}
+
+.akan1 {
+  float:left;
+  width: 60%;
+  font-style: italic;
+}
