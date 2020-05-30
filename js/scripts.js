@@ -5,3 +5,5 @@ var akanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Ywa', 'Kofi', 'Kwame', 
 function weekDay(dayNum) {
   return Date.test[dayNum.getDay()];
 }
+
+function naming(){}
