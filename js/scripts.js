@@ -62,3 +62,14 @@ else if (weekDay(dayNum) == "Monday" && yourGender == "male") {
 } else {
   alert("Dear " + yourName + " your new name will be " + akanNames[13] + ".")
 }
+playAgain();
+}
+naming();
+
+function playAgain() {
+if ((confirm("Do you want to play the game again?").toString()) == 'true') {
+  naming();
+} else {
+  alert("Thank you.")
+}
+}
