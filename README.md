@@ -1,6 +1,6 @@
 PROJECT NAME
 
-This project has been dabbed as "The Akan Naming System".
+This project has been dubbed as "The Akan Naming System".
 
 PROJECT DESCRIPTION;
 
@@ -66,8 +66,8 @@ css (both bootstrap and customized) for styling
 CONTACT INFORMATION.
 
 In case you may need to contact the author, you can use either of the following;
-- Mobile number - +254720309206
-- Email address Lthuita@gmail.com
+- Mobile number:  - +254720309206
+- Email address:  Lthuita@gmail.com
 
 
 LICENSE AND COPYRIGHT INFORMATION.
